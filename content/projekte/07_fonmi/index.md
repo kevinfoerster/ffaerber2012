@@ -1,6 +1,6 @@
 ---
 title: Fonmi
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Fonmi wurde als Online-Community mit einer innovativen Benutzeroberfläche und Online-Konferenz Funktion konzipiert.
 date: 02.2011
 ---
 

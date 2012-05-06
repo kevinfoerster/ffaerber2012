@@ -1,6 +1,6 @@
 ---
 title: wonderapp
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Die wonderapp ist eine Webapplikation mit der man interaktive Präsentationen erstellen, verwalten und distribuieren kann.
 date: 07.2011
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: CashBullFx
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Im Online-Devisenhandel (Forex) ist es möglich, mittels Cashback einen Teil der Tradinggebühren zurück zu bekommen. 
 date: 05.2011
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Rewe Sammelkarten Aktion
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Online wurde ein Webspecial realisiert, mit dem man seine eigene Rewe Sammelkarte erstellen und teilen kann.
 date: 09.2010
 ---
 

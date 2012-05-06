@@ -1,6 +1,6 @@
 ---
 title: Tic Tac Toe
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Um die Möglichkeiten von Mobile Web Appilcations besser zu verstehen, habe ich selbst ein Spiel auf Basis moderner Webtechnologien entwickelt.
 date: 03.2011
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: weblightz
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Mit der Webapplikation weblightz ist es möglich, RGB Lampen über das Internet via Browser zu steuern.
 date: 04.2012
 ---
 

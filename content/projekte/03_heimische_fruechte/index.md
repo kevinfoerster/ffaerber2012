@@ -1,6 +1,6 @@
 ---
 title: Hohes C Heimische Früchte
-summary: summary summary summary summary summary summary summary summary summary summary summary
+summary: Für Hohes C wurde eine interaktive Obst-Plantage im Web entwickelt, in der Facebook User ihre eigenen Baum pflanzen können.
 date: 06.2010
 ---
 

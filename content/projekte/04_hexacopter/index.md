@@ -1,6 +1,6 @@
 ---
 title: Hexacopter
-summary: summary summary summary summary summary summary summary summary summary summary summary
+summary: die Idee, einen Hexakopter einzusetzen, um kostengünstige Luftbilder und Landschaftsaufnahmen für Architekten anzubieten.
 date: 07.2010
 ---
 

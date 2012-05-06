@@ -1,6 +1,6 @@
 ---
 title: CASIO Exilim H10
-summary: summary summary summary summary summary summary summary summary summary summary summary
+summary: Für die CASIO Exilim H10 wurde ein Webspecial mit einer interaktive Foto-Urlaubs-Story entwickelt.
 data: 03.2010
 ---
 

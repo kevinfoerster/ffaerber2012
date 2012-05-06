@@ -1,6 +1,6 @@
 ---
 title: fibonacci
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Begeistert von dem mathematischen Prinzip habe ich dies in einer Lichtinstallation dargestellt.
 date: 10.2010 
 ---
 

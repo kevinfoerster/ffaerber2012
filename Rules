@@ -26,7 +26,7 @@ compile '/style/*/' do
 end
 
 compile '*/media/*/', :rep => :thumbnail do
-    filter :resizeAndCrop, :width => 550
+    filter :resizeAndCrop, :width => 275, :height => 206
   # filter :sass, Compass.sass_engine_options
 end
 

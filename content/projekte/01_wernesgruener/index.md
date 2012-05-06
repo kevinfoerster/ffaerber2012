@@ -1,6 +1,7 @@
 ---
 title: Wernesgrüner
-summary: summary summary summary summary summary summary summary summary summary summary summary 
+summary: Der neue Online-Auftritt der Wernesgrüner Brauerei ist ab sofort jünger, frischer und urbaner. In der Umsetzung wurde auf viel Text verzichtet - stattdessen sprechen großformatige Bilder und Filmsequenzen, quasi ohne Ladezeiten, für die Marke.
+ 
 date: 01.2010
 ---
 
