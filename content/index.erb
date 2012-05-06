@@ -1,21 +1,26 @@
-<div class="content_box_1">
-    <img class="image" src="http://felixfaerber.de/content/30/4_600x450.jpg" alt="ff_logo">
-    <div class="content_box">
-      <div class="content">
-      <h2>wonderapp</h2>
-      <p>
-        Die wonderapp ist eine Webapplikation mit der 
-        man interaktive Präsentationen erstellen, 
-        verwalten und distribuieren kann, die dann auf 
-        Windows PCs und Apple iPads laufen. 
-        Die Präsentationen werden auf Basis 
-        voreingestellter Designs mit individuellen ...
-        mehr info
-      </p>
+<%
+  projects = @items.select {|it| 
+    it.identifier =~ %r{/projekte} && it.binary? == false
+  }
+%>
+
+<% projects.each do |project| %>
+  
+  <div class="content_box_1">
+      <img class="image" src="<%= project.compiled_content(:rep => :image)%>" alt="ff_logo">
+
+      <div class="content_box">
+        <div class="content">
+          <h2><%= project[:title]%></h2>
+          <p>
+            <%= project[:summary]%>
+          </p>
+        </div>
       </div>
-    </div>
-</div>
-<div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+<% end %>
+
 
 
 
