@@ -1,5 +1,4 @@
 @import "blueprint/reset"
-@import "blueprint/grid"
 @import "compass"
 
 
@@ -9,7 +8,6 @@ body
   color: #525252
   background-color: #eee
 
-
 h1
   font-size: 18px
   font-weight: bold
@@ -17,33 +15,90 @@ h1
 h2
   font-size: 18px
 
+h3
+  font-size: 12px
+  font-weight: bold
+
+a:link
+  color: #007eff 
+  text-decoration: none
+
+a:hover 
+  color: #007eff
+  text-decoration: underline
+
+a:visited
+  color: #007eff 
+  text-decoration: none
+
+
+
 
 .container
-  width: 560px
+  width: 600px
   margin: 0 auto
+  margin-bottom: 80px
 
-.left_top_gradient
-  +background-image(linear-gradient(left top, #fff, #eee))
-
-
+.clear
+  clear: left
+  height: 20px
 #header
-  .navi
+  margin-bottom: 20px
+  float: left
+  .signe_box
+    +background-image(linear-gradient(120deg, #fff, #eee 50%))
+    height: 100px
+    width: 275px
+    float: left
+
+  .navi_box
     font-family: 'PT Sans' sans-serif
     height: 100px
-    margin-top: 30px
-    margin-left: 10px
-    
+    width: 275px
+    float: left
     h2
       margin-top: -4px
-
-  
-
-.signe_box
-  +background-image(linear-gradient(right bottom, #fff, #eee))
-  height: 100px
+    .content
+      margin-top: 30px
+      margin-left: 20px
+    .navi
+      margin-top: 4px
 
   #logo
     margin-top: 35px
     margin-left: 230px
+
+
+.content_box_1
+  .image
+    width: 275px
+    float: left
+
+
+.content_box_2
+  .content_box
+    margin-top: 10px
+    margin-left: 295px
+
+
+.content_box
+  margin-left: 20px
+  +background-image(linear-gradient(300deg, #fff, #eee 50%))
+  width: 300px
+  height: 200px
+  float: left
+  .content
+    width: 250px
+    line-height: 18px
+    margin-top: 20px
+    margin-left: 20px
+    p
+      color: #525252
+    h2
+      font-family: 'PT Sans' sans-serif
+      margin-bottom: 5px
+
+
+
 
 
