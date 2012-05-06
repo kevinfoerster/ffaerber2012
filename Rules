@@ -24,9 +24,14 @@ Compass.add_project_configuration('config.rb')
 compile '/style/*/' do
   filter :sass, Compass.sass_engine_options
 end
+
 compile '*/media/*/', :rep => :thumbnail do
-    filter :resizeAndCrop, :width => 275, :height => 206
+    filter :resizeAndCrop, :width => 550
   # filter :sass, Compass.sass_engine_options
+end
+
+compile '/media/*/', :rep => :thumbnail do
+  # filter :resizeAndCrop, :width => 550
 end
 
 compile '/stylesheets/partials/*/' do
