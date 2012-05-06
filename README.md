@@ -1,1 +1,2 @@
-df
+start the server:
+nanoc autocompile
