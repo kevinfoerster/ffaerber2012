@@ -7,7 +7,8 @@
 <% projects.each do |project| %>
   
   <div class="content_box_1">
-      <img class="image" src=<%= "#{project.path}media/1_thumbnail.jpg" %> alt="ff_logo">
+      
+      <img class="image" src=<%= project.compiled_content(:rep => :image)[:thumbnail_assets_path].first %> alt="ff_logo">
       <div class="content_box">
         <div class="content">
         <h2><%= project[:title] %></h2>

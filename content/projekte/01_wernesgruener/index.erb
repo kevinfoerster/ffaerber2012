@@ -9,9 +9,9 @@ date: 01.2010
 
 <div class="content_box_2">
 
-    <img class="image" src=<%= "#{item.path}media/1.jpg" %> alt="ff_logo">
-	
-	<%= item.compiled_content(:rep => :image) %>
+	  <% item.compiled_content(:rep => :image)[:big_assets_path].each{ |asset| %>
+      <img class="image" src=<%= "#{asset}" %> alt="ff_logo">
+    <% }%>
 
     <div class="content_box">
       <div class="content">

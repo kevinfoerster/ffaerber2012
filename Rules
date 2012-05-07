@@ -43,7 +43,7 @@ end
 
 compile '/projekte/*', :rep => :image do
   unless item.binary?
-    filter :getNestedMedia, :source => item.identifier
+    filter :getNestedAssets, :source => item.identifier
   end
 end
 

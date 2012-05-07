@@ -15,23 +15,29 @@ class ResizeAndCropFilter < Nanoc3::Filter
   end
 end
 
-class GetNestedMedia < Nanoc3::Filter
-  identifier :getNestedMedia
+class GetNestedAssets < Nanoc3::Filter
+  identifier :getNestedAssets
   type :text
 
   def run(content, params={})
-    filter = params[:source]
-    assets_path = []
+    filter                = params[:source]
+    thumbnail_assets_path = []
+    big_assets_path       = []      
+    assets                = {}
 
     media = @items.select {|it| 
       it.identifier =~ %r{#{filter}} && it.binary? == true
     }
     
-    ap media.each do |asset|
-      ap '========='
-      ap asset.path(:rep => :big)
-    end
+        
+    media.each_with_index{|asset, index|
+      big_assets_path << asset.path(:rep => :big)
+      thumbnail_assets_path << asset.path(:rep => :thumbnail)      
+    }
+    
+    assets[:big_assets_path]       = big_assets_path 
+    assets[:thumbnail_assets_path] = thumbnail_assets_path
 
-
+    assets 
   end
 end
