@@ -30,6 +30,9 @@ compile '*/media/*/', :rep => :thumbnail do
   # filter :sass, Compass.sass_engine_options
 end
 
+compile '*/media/*/', :rep => :big do
+end
+
 compile '/media/*/', :rep => :thumbnail do
   # filter :resizeAndCrop, :width => 550
 end
@@ -76,6 +79,13 @@ route '*', :rep => :thumbnail do
     item.identifier.chop+"_thumbnail."+ item[:extension]    
   end
 end
+
+route '*', :rep => :big do
+  if item.binary?
+    item.identifier.chop+"."+ item[:extension]    
+  end
+end
+
 
 route '/style/*/' do
   # don't generate a directory like we do for HTML files

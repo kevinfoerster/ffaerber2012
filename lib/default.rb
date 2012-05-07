@@ -21,10 +21,17 @@ class GetNestedMedia < Nanoc3::Filter
 
   def run(content, params={})
     filter = params[:source]
+    assets_path = []
+
     media = @items.select {|it| 
       it.identifier =~ %r{#{filter}} && it.binary? == true
     }
     
-    media.first.path(:rep => :thumbnail)
+    ap media.each do |asset|
+      ap '========='
+      ap asset.path(:rep => :big)
+    end
+
+
   end
 end
