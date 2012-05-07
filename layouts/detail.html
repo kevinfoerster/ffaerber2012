@@ -1,1 +1,46 @@
-project.path
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Felix Faerber - <%= @item[:title] %></title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/screen.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.0">
+  </head>
+  <body>
+    <div class="container">
+      
+      <div id="header">
+
+        <div class='signe_box'>
+          <img id="logo" src="http://www.ffaerber.com/images/ff.svg" weight='25' height='25' alt="ff_logo">
+        </div>
+
+        <div class="navi_box">
+          <div class="content">
+            <h1>Felix Faerber</h1>
+            <h2>Freiberuflicher Webentwickler</h2>
+            <div class="navi">
+              <a href="/">Projekte</a> | <a href="/ich/">Über mich</a> | <a href="/kontakt/">Kontakt</a> | <a href="/impressum/">Impressum</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="content_box_2">
+        <% item.compiled_content(:rep => :image)[:big_assets_path].each{ |asset| %>
+        <img class="image" src=<%= "#{asset}" %> alt="ff_logo">
+        <% }%>
+
+        <div class="content_box">
+          <div class="content">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+  </body>
+</html>

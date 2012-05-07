@@ -41,6 +41,13 @@ compile '/stylesheets/partials/*/' do
   # don’t compile partials
 end
 
+compile '/projekte/*' do
+  if item[:extension] == "md"
+    filter :kramdown
+    layout 'detail'
+  end
+end
+
 compile '/projekte/*', :rep => :image do
   unless item.binary?
     filter :getNestedAssets, :source => item.identifier
